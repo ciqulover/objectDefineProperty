@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<label for="input">输入:</label>
+<input type="text" id="input" model="someStr">
+<br>
+<span>输出:</span>
+<span id="output"></span>
+
+<script src="MVVM.js"></script>
+<script>
+    new MVVM({
+        input:document.getElementById('input'),
+        output:document.getElementById('output'),
+        data:{
+            someStr:'hello world'
+        }
+    })
+</script>
+</body>
+</html>
