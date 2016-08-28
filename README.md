@@ -1,7 +1,7 @@
 近日读了Vue.js一部分源代码，倒也是感到道阻且长。其中最核心的一点就是数据绑定。
 相比于Angular.js的脏值检查与React.js的虚拟DOM，Vue.js运用了Object.defineProperty来追踪数值的变化和依赖，相当于对数据的读取进行了“劫持”。
 于是这篇文章就介绍一个最最简单的利用Object.defineProperty来实现数据的双向绑定的例子。
-其中JS代码没超过50行，超级短是不是
+其中JS代码没超过50行，超级短是不是。
 
 
 下面是用来展示的index.html
