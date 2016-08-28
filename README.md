@@ -3,12 +3,11 @@
 于是这篇文章就介绍一个最最简单的利用Object.defineProperty来实现数据的双向绑定的例子。
 其中JS代码没超过50行，超级短是不是
 
-其中用了ES6语法，由于代码很短，就没有用babel转码，所以如果想看Demo，请用Chrome浏览器。
 
-下面是用来展示的MVVM.html
+下面是用来展示的index.html
 
 
-### MVVM.html
+### index.html
 
 ```
 <!DOCTYPE html>
@@ -93,7 +92,6 @@ class MVVM {
 }
 ```
 
-源代码请戳这里
 
 MVVM.js返回一个类，对传入的数据进行绑定。不过这个实在是再简单不过了，因为绑定的只只有一个，属性也只有model，甚至如果其中someStr不是数值而是对象也不能进行深层的绑定。
 嘿不过用于演示Object.defineProperty的数据绑定最基本用法已经足够啦。
